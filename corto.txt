@@ -1,1 +1,7 @@
-https://github.com/roberth23/firma
+
+son los 2 tickets de Tomás. Para pegar:
+
+Refinamiento de transaccional Colombia y Perú, esta semana:
+
+	1. 	Revisar el impacto del cambio de tipo de transacción: comparar lo que hoy tiene ent_trx_loy contra sfc_tipos_trx_medio_pago.
+	2. 	Generar la definición y documentación del medio de pago y tipo de transacción, para Operaciones.
