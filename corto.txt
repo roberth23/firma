@@ -1,7 +1,147 @@
+Estructura RECEVENR (SFC) Respuesta de la acumulación
+ 
 
-son los 2 tickets de Tomás. Para pegar:
+CAMPO
 
-Refinamiento de transaccional Colombia y Perú, esta semana:
+DESCRIPCIÓN
 
-	1. 	Revisar el impacto del cambio de tipo de transacción: comparar lo que hoy tiene ent_trx_loy contra sfc_tipos_trx_medio_pago.
-	2. 	Generar la definición y documentación del medio de pago y tipo de transacción, para Operaciones.
+POSICION INICIAL
+
+LARGO
+
+TIPOREGI
+
+Cabecera o detalle: "C" (Cabecera) o "D" (Detalle)
+
+1
+
+1
+
+CODENTIDAD
+
+Chile 0015, Perú 0142
+
+2
+
+8
+
+CODCINTA
+
+01
+
+11
+
+2
+
+NUMSECUE
+
+Formato juliano de fecha, esto es definido de cada país
+
+13
+
+8
+
+NUMSEREG
+
+Cantidad de registros que viene, se rellena con 0 a la izq.
+
+21
+
+9
+
+CODAPLIC
+
+Código de aplicación de acumulación por abono. Parametrías SFC
+
+30
+
+8
+
+CODEVENT
+
+Parametrías SFC
+
+38
+
+8
+
+COD_EMPRESA
+
+Código empresa
+
+46
+
+11
+
+NUM_DOCUMENTO
+
+Número de documento del cliente (RUT, DNI, CC)
+
+56
+
+20
+
+PUNTOS
+
+Cantidad de puntos acumulados (sin puntos, comas, ni decimales)
+
+76
+
+15
+
+GLOSA
+
+Glosa que contiene prefijo ABONO DE PUNTOS + EL NOMBRE DEL COMERCIO
+
+91
+
+30
+
+SIGNO
+
+Signo relacionado con el campo PUNTOS puede ser positivo o negativo
+
+121
+
+1
+
+FECHA
+
+Fecha de la acumulación en formato AAAAMMDD
+
+122
+
+8
+
+EDETALLE
+
+Caracteres en blanco para completar largo fijo del registro
+
+130
+
+2044
+
+RESPTAEV
+
+Código numérico que indica si la acumulación fue exitosa o rechazada:
+
+00 (acumulación de puntos exitosa)
+
+99 (acumulación de puntos rechazada) 
+
+2045
+
+2
+
+EDETALLE
+
+Glosa
+
+2047
+
+42
+
+ 
+
+Ejemplo Recevenr
+D0015    012602699400000000100000094SEGCL0030940003109409426643K           000000000010000ABONO DE PUNTOS SEGUROS       +20260126                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           0026012782147190000000000001+000000001000000
